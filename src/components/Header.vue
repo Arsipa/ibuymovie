@@ -20,7 +20,7 @@
                     ]"></Dropdown>
             </nav>
             <div class="header__right">
-                <button class="green-btn">Авторизоваться</button>
+                <button class="header__auth-btn">Авторизоваться</button>
             </div>
         </div>
     </header>
@@ -75,7 +75,7 @@ nav a {
     align-items: center;
 }
 
-.green-btn {
+.header__auth-btn {
     padding: 11px 22px;
     letter-spacing: 0.13px;
     color: white;

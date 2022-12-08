@@ -1,41 +1,59 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Cookie from "@/components/Cookie";
 
 export default {
     name: "App",
     components: {
         Header,
         Footer,
+        Cookie,
     },
 };
 </script>
 
 <template>
-  <Header></Header>
-  <router-view/>
-  <Footer></Footer>
+    <Header></Header>
+    <router-view />
+    <Footer></Footer>
+    <Cookie></Cookie>
 </template>
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: inherit;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
 }
-ul{
-  list-style: none;
+body {
+    overflow-x: hidden;
 }
-.container{
-  width: 1440px;
-  margin: 0 auto;
+ul {
+    list-style: none;
 }
-a{
-  text-decoration: none;
+.container {
+    width: 1440px;
+    margin: 0 auto;
 }
-button{
-  cursor: pointer;
-  border: none;
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(52, 169, 81, 0.7);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(52, 169, 81);
 }
 </style>
