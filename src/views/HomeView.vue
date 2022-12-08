@@ -1,9 +1,9 @@
 <template>
     <div class="home">
-        <video loop autoplay muted poster="@/assets/video/mainVideoPreview.png">
+        <!-- <video loop autoplay muted poster="@/assets/video/mainVideoPreview.png">
           <source src="@/assets/video/back.mp4" type="video/mp4" />
           <source src="@/assets/video/back.webm" type="video/webm" />
-        </video>
+        </video> -->
         <HelloWorld msg="Welcome to Your Vue.js App" />
     </div>
 </template>

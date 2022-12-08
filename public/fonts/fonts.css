@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProRegular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProBold.otf") format("otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProBoldItalic.otf") format("otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProHeavy.otf") format("otf");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProHeavyItalic.otf") format("otf");
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProItalic.otf") format("otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProLight.otf") format("otf");
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProLightItalic.otf") format("otf");
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProThin.otf") format("otf");
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FS Elliot Pro";
+    src: url("./fs-elliot-pro/FS_Elliot_ProThinItalic.otf") format("otf");
+    font-weight: thin;
+    font-style: italic;
+}
