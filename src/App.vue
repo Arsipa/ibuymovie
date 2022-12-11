@@ -2,6 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Cookie from "@/components/Cookie";
+import Auth from "@/components/Auth";
 
 export default {
     name: "App",
@@ -9,6 +10,7 @@ export default {
         Header,
         Footer,
         Cookie,
+        Auth,
     },
 };
 </script>
@@ -17,6 +19,7 @@ export default {
     <Header></Header>
     <router-view />
     <Footer></Footer>
+    <Auth v-if="true"></Auth>
     <Cookie></Cookie>
 </template>
 
