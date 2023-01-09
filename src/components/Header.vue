@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <router-link to="/" class="logo"
-                ><img src="@/assets/logo.svg" alt="IBUYMOVIE"
+                ><img src="@/assets/img/logo.svg" alt="IBUYMOVIE"
             /></router-link>
             <nav>
                 <router-link to="/">Главная</router-link>

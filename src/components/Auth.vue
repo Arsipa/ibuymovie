@@ -1,6 +1,6 @@
 <template>
     <div class="auth">
-        <form action="" class="form">
+        <form class="form" @submit.prevent="checkForm">
             <p class="form__title">АВТОРИЗАЦИЯ</p>
             <div class="form__inner">
                 <div class="row">
@@ -8,6 +8,7 @@
                     <input
                         type="text"
                         name="login"
+                        v-model="auth.login"
                         required
                         placeholder="ЛОГИН..." />
                 </div>
@@ -24,6 +25,7 @@
                     <input
                         type="password"
                         name="password"
+                        v-model="auth.password"
                         required
                         placeholder="ПАРОЛЬ..." />
                 </div>
@@ -131,9 +133,38 @@
 </template>
 
 <script>
+import { axios } from "axios";
+
 export default {
     name: "Auth",
     props: {},
+    methods: {
+        checkForm() {
+            axios
+                .post("http://localhost:8081/", {
+                    login: this.auth.login,
+                    password: this.auth.password,
+                })
+                .then((response) => {
+                    console.log(response);
+                })
+                .catch((error) => {
+                    alert(error);
+                });
+        },
+    },
+    data() {
+        return {
+            auth: {
+                login: "",
+                password: "",
+            },
+            registration: {
+                login: "",
+                password: "",
+            },
+        };
+    },
 };
 </script>
 
@@ -145,16 +176,18 @@ export default {
     transform: translate(-50%, -50%);
     z-index: 100;
 }
+
 .form {
     border-radius: 39px;
     position: relative;
     padding: 44px 177px 40px 56px;
     background-color: #f4f4f6;
-    background-image: url(@/assets/bunny.svg);
+    background-image: url(@/assets/img/bunny.svg);
     background-position: center right 5px;
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 .form .form__title {
     font-weight: 600;
     font-size: 32px;
@@ -185,6 +218,7 @@ export default {
     opacity: 0.54;
     max-width: 120%;
 }
+
 .form-link {
     letter-spacing: 0.26px;
     color: #34a951;
@@ -192,6 +226,7 @@ export default {
     font-size: 12px;
     text-decoration: underline;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -209,6 +244,7 @@ input[type="password"] {
     border-radius: 6px;
     width: 100%;
 }
+
 .row {
     display: grid;
     grid-template-columns: 1fr 270px;
@@ -229,6 +265,7 @@ input[type="password"] {
     opacity: 0.64;
     margin-bottom: 32px;
 }
+
 .jb__btn {
     padding: 12px 16px;
     color: white;
@@ -243,6 +280,7 @@ input[type="password"] {
     line-height: 22px;
     font-family: "Montserrat", sans-serif;
 }
+
 .jb__actions {
     display: inline-flex;
     align-items: center;
@@ -265,6 +303,7 @@ input[type="password"] {
     height: 38px;
     position: relative;
 }
+
 .jb__socials .social-item svg {
     position: absolute;
     top: 50%;

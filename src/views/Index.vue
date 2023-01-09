@@ -5,7 +5,7 @@
                 loop
                 autoplay
                 muted
-                poster="@/assets/background.png"
+                poster="@/assets/img/background.png"
                 class="jb__video">
                 <source src="@/assets/video/back.webm" type="video/webm" />
                 <source src="@/assets/video/back.mp4" type="video/mp4" />
@@ -117,16 +117,25 @@
             </svg>
         </div>
     </section>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="aside-page">
+        <div class="container">
+            <div class="aside-page__inner">
+                <News></News>
+                <Aside></Aside>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
+import News from "@/components/News/News.vue";
+import Aside from "@/components/Aside/Aside.vue";
 
 export default {
     name: "Index",
     components: {
-        HelloWorld,
+        News,
+        Aside,
     },
 };
 </script>
@@ -275,4 +284,5 @@ h1 {
         transform: translateY(5px);
     }
 }
+
 </style>

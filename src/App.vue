@@ -32,6 +32,7 @@ export default {
 }
 body {
     overflow-x: hidden;
+    background: #FBFBFB;
 }
 ul {
     list-style: none;
@@ -58,5 +59,11 @@ button {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(52, 169, 81);
+}
+.aside-page .aside-page__inner{
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    justify-content: space-between;
 }
 </style>
